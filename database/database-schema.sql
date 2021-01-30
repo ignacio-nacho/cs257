@@ -11,14 +11,15 @@ CREATE TABLE athletes (
 
 CREATE TABLE teams (    
   id integer,
+  noc text,
   name text,
-  gold_medals integer,
-  silver_medals integer,
   bronze_medals integer,
+  silver_medals integer,
+  gold_medals integer,
   total_medals integer
 );
 
-CREATE TABLE noc_regions (
+CREATE TABLE nocs (
   id integer,
   noc text,
   region text
@@ -26,13 +27,16 @@ CREATE TABLE noc_regions (
 
 CREATE TABLE games (
   id integer,
-  year integer,
+  city text,
   season text,
-  city text
+  year integer
 );
 
-CREATE TABLE events (
+CREATE TABLE athletes_medals (
   id integer,
-  games_id integer,
-  sport text
-);    
+  athletes_id integer,
+  season text,
+  year integer,
+  event text,
+  medal_type text
+);
