@@ -1,0 +1,48 @@
+/*
+
+    styles.css
+    Nacho Rodriguez (rodriguezn@carleton.edu)
+    02/04/2021
+
+*/
+
+.topDiv {
+    position: fixed;
+    bottom: 80vh;
+    left: 5vw;
+    right: 5vw;
+    text-align: center;
+    width: 80vw;
+    height: 20vh;
+    background-color: red;
+    
+}
+
+.mainDiv {
+    position: fixed;
+    left: 25vw;
+    right: 5vw;
+    top: 20vh;
+    right: 0vh;
+    /*
+    border-style: solid;
+    border-width: thick;
+    */
+    width: 60vw;
+    height: 80vh;
+    background-color: blue;
+}
+
+.leftDiv {
+    position: fixed;
+    right: 75vw;
+    top: 20vh;
+    /*
+     QUESTION: what causes borders to throw off sizing?
+    border-style: dotted;
+    border-width: thick;
+    */
+    width: 20vw;
+    height: 80vh;
+    background-color: green;
+}
